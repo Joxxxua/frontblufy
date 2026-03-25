@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 232 314" fill="none">
+  <title>Blufy symbol</title>
+  <defs>
+    <clipPath id="blufy-icon-crop">
+      <rect width="232" height="314" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#blufy-icon-crop)">
+    <image
+      width="514"
+      height="314"
+      xlink:href="blufy-logo.png"
+      href="blufy-logo.png"
+      preserveAspectRatio="xMinYMid meet"
+    />
+  </g>
+</svg>
