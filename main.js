@@ -43,3 +43,36 @@ document.querySelector("[data-nav-search]")?.addEventListener("click", () => {
 
   nodes.forEach((el) => observer.observe(el));
 })();
+
+(function initSkyParallax() {
+  const layers = document.querySelectorAll("[data-sky-parallax]");
+  if (!layers.length) return;
+
+  const prefersReduced =
+    typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (prefersReduced) return;
+
+  let ticking = false;
+
+  function update() {
+    const y = window.scrollY || 0;
+    layers.forEach((el) => {
+      const speed = parseFloat(el.dataset.skyParallax || "0", 10);
+      /* Descendo a página: camadas sobem (efeito “descida de avião”) */
+      const offset = -y * speed;
+      el.style.transform = `translate3d(0, ${offset}px, 0)`;
+    });
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  update();
+})();
