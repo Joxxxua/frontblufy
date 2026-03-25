@@ -977,3 +977,93 @@ main {
   color: var(--text-muted);
   text-align: center;
 }
+
+/* —— Entrada do hero (carregamento) —— */
+@media (prefers-reduced-motion: no-preference) {
+  .hero__enter {
+    opacity: 0;
+    transform: translateY(22px);
+    animation: hero-enter 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .hero__enter--2 {
+    animation-delay: 0.1s;
+  }
+
+  .hero__enter--3 {
+    animation-delay: 0.22s;
+  }
+
+  .hero__enter--4 {
+    animation-delay: 0.34s;
+  }
+
+  .hero__enter--5 {
+    animation-delay: 0.46s;
+  }
+}
+
+@keyframes hero-enter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__enter {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+/* —— Revelação ao scroll (estilo Apple) —— */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(36px) scale(0.985);
+    transition:
+      opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    will-change: auto;
+  }
+
+  .reveal--delay-0 {
+    transition-delay: 0ms;
+  }
+
+  .reveal--delay-1 {
+    transition-delay: 90ms;
+  }
+
+  .reveal--delay-2 {
+    transition-delay: 180ms;
+  }
+
+  .reveal--delay-3 {
+    transition-delay: 270ms;
+  }
+
+  .reveal--delay-4 {
+    transition-delay: 360ms;
+  }
+
+  .reveal--delay-5 {
+    transition-delay: 450ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
