@@ -17,7 +17,15 @@
         <li><a href="#diferenciais">Diferenciais</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
-      <a class="nav__cta" href="#contato">Fale conosco</a>
+      <div class="nav__actions">
+        <button type="button" class="nav__icon-btn" aria-label="Buscar" data-nav-search>
+          <i data-lucide="search" aria-hidden="true"></i>
+        </button>
+        <a class="nav__icon-btn" href="#contato" aria-label="Área do cliente">
+          <i data-lucide="user-round" aria-hidden="true"></i>
+        </a>
+        <a class="nav__cta" href="#contato">Fale conosco</a>
+      </div>
     </nav>
   </header>
 
@@ -74,12 +82,24 @@
           Um time técnico alinhado ao seu roadmap. Da ideia ao deploy, com transparência total.
         </p>
         <ul class="feature-banner__icons" aria-label="Áreas de atuação">
-          <li><span class="icon icon--cloud" title="Cloud"></span></li>
-          <li><span class="icon icon--mobile" title="Mobile"></span></li>
-          <li><span class="icon icon--web" title="Web"></span></li>
-          <li><span class="icon icon--api" title="APIs"></span></li>
-          <li><span class="icon icon--ai" title="IA"></span></li>
-          <li><span class="icon icon--shield" title="Segurança"></span></li>
+          <li>
+            <span class="feature-banner__icon-wrap" title="Cloud"><i data-lucide="cloud" aria-hidden="true"></i></span>
+          </li>
+          <li>
+            <span class="feature-banner__icon-wrap" title="Mobile"><i data-lucide="smartphone" aria-hidden="true"></i></span>
+          </li>
+          <li>
+            <span class="feature-banner__icon-wrap" title="Web"><i data-lucide="monitor" aria-hidden="true"></i></span>
+          </li>
+          <li>
+            <span class="feature-banner__icon-wrap" title="APIs"><i data-lucide="brackets" aria-hidden="true"></i></span>
+          </li>
+          <li>
+            <span class="feature-banner__icon-wrap" title="IA"><i data-lucide="sparkles" aria-hidden="true"></i></span>
+          </li>
+          <li>
+            <span class="feature-banner__icon-wrap" title="Segurança"><i data-lucide="shield" aria-hidden="true"></i></span>
+          </li>
         </ul>
       </div>
     </section>
@@ -91,32 +111,32 @@
       </div>
       <div class="cards-grid cards-grid--6">
         <article class="info-card reveal reveal--delay-0">
-          <div class="info-card__icon" aria-hidden="true"></div>
+          <div class="info-card__icon" aria-hidden="true"><i data-lucide="code-xml"></i></div>
           <h3 class="info-card__title">Código limpo</h3>
           <p class="info-card__text">Padrões claros, revisões e testes para manter velocidade no longo prazo.</p>
         </article>
         <article class="info-card reveal reveal--delay-1">
-          <div class="info-card__icon" aria-hidden="true"></div>
+          <div class="info-card__icon" aria-hidden="true"><i data-lucide="rocket"></i></div>
           <h3 class="info-card__title">Entrega rápida</h3>
           <p class="info-card__text">Ciclos curtos, demos frequentes e priorização alinhada ao negócio.</p>
         </article>
         <article class="info-card reveal reveal--delay-2">
-          <div class="info-card__icon" aria-hidden="true"></div>
+          <div class="info-card__icon" aria-hidden="true"><i data-lucide="layers"></i></div>
           <h3 class="info-card__title">Arquitetura escalável</h3>
           <p class="info-card__text">Cloud-native quando faz sentido, sem over-engineering.</p>
         </article>
         <article class="info-card reveal reveal--delay-3">
-          <div class="info-card__icon" aria-hidden="true"></div>
+          <div class="info-card__icon" aria-hidden="true"><i data-lucide="layout-template"></i></div>
           <h3 class="info-card__title">Design centrado no usuário</h3>
           <p class="info-card__text">UX que reduz atrito e eleva a percepção da sua marca.</p>
         </article>
         <article class="info-card reveal reveal--delay-4">
-          <div class="info-card__icon" aria-hidden="true"></div>
+          <div class="info-card__icon" aria-hidden="true"><i data-lucide="scan-eye"></i></div>
           <h3 class="info-card__title">Transparência</h3>
           <p class="info-card__text">Acesso ao progresso, métricas e decisões técnicas explicadas.</p>
         </article>
         <article class="info-card reveal reveal--delay-5">
-          <div class="info-card__icon" aria-hidden="true"></div>
+          <div class="info-card__icon" aria-hidden="true"><i data-lucide="headphones"></i></div>
           <h3 class="info-card__title">Suporte contínuo</h3>
           <p class="info-card__text">Evolução do produto após o go-live, com SLA combinado.</p>
         </article>
@@ -130,7 +150,7 @@
       </div>
       <div class="cards-grid cards-grid--3">
         <article class="service-card reveal reveal--delay-0">
-          <div class="service-card__badge" aria-hidden="true"></div>
+          <div class="service-card__icon" aria-hidden="true"><i data-lucide="app-window"></i></div>
           <h3 class="service-card__title">Desenvolvimento web</h3>
           <p class="service-card__text">SPAs, portais e plataformas com performance e SEO em mente.</p>
           <ul class="service-card__tags">
@@ -140,7 +160,7 @@
           </ul>
         </article>
         <article class="service-card reveal reveal--delay-1">
-          <div class="service-card__badge service-card__badge--alt" aria-hidden="true"></div>
+          <div class="service-card__icon service-card__icon--alt" aria-hidden="true"><i data-lucide="plug-2"></i></div>
           <h3 class="service-card__title">Apps e integrações</h3>
           <p class="service-card__text">Mobile, APIs REST/GraphQL e conectores com sistemas legados.</p>
           <ul class="service-card__tags">
@@ -150,7 +170,7 @@
           </ul>
         </article>
         <article class="service-card reveal reveal--delay-2">
-          <div class="service-card__badge service-card__badge--alt" aria-hidden="true"></div>
+          <div class="service-card__icon service-card__icon--alt" aria-hidden="true"><i data-lucide="bot"></i></div>
           <h3 class="service-card__title">IA &amp; automação</h3>
           <p class="service-card__text">Assistentes, pipelines de dados e fluxos inteligentes no seu produto.</p>
           <ul class="service-card__tags">
@@ -165,18 +185,22 @@
     <section class="stats" aria-label="Números">
       <div class="stats__inner">
         <div class="stat reveal reveal--delay-0">
+          <span class="stat__glyph" aria-hidden="true"><i data-lucide="folder-kanban"></i></span>
           <span class="stat__value">100+</span>
           <span class="stat__label">Projetos entregues</span>
         </div>
         <div class="stat reveal reveal--delay-1">
+          <span class="stat__glyph" aria-hidden="true"><i data-lucide="users"></i></span>
           <span class="stat__value">20+</span>
           <span class="stat__label">Especialistas</span>
         </div>
         <div class="stat reveal reveal--delay-2">
+          <span class="stat__glyph" aria-hidden="true"><i data-lucide="activity"></i></span>
           <span class="stat__value">1M+</span>
           <span class="stat__label">Usuários impactados</span>
         </div>
         <div class="stat reveal reveal--delay-3">
+          <span class="stat__glyph" aria-hidden="true"><i data-lucide="badge-check"></i></span>
           <span class="stat__value">99.9%</span>
           <span class="stat__label">Foco em qualidade</span>
         </div>
@@ -186,13 +210,7 @@
     <section class="cta-strip" aria-labelledby="cta-strip-title">
       <div class="cta-strip__gradient" aria-hidden="true"></div>
       <div class="cta-strip__content reveal">
-        <span class="cta-strip__icon" aria-hidden="true">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="16" cy="18" r="6" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="32" cy="18" r="6" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M8 38c4-8 10-12 16-12s12 4 16 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </span>
+        <span class="cta-strip__icon" aria-hidden="true"><i data-lucide="users-round"></i></span>
         <h2 id="cta-strip-title" class="cta-strip__title">Programa Blufy para parceiros</h2>
         <p class="cta-strip__text">
           Roadmap compartilhado, squad dedicado e visão de produto. Tudo que você precisa é uma ideia e vontade de executar.
@@ -204,19 +222,19 @@
       <h2 id="quick-links-title" class="visually-hidden">Links rápidos</h2>
       <div class="links-grid">
         <a class="link-tile reveal reveal--delay-0" href="#contato">
-          <span class="link-tile__icon link-tile__icon--download" aria-hidden="true"></span>
+          <span class="link-tile__icon" aria-hidden="true"><i data-lucide="download"></i></span>
           <span class="link-tile__label">Briefing</span>
         </a>
         <a class="link-tile reveal reveal--delay-1" href="#servicos">
-          <span class="link-tile__icon link-tile__icon--doc" aria-hidden="true"></span>
+          <span class="link-tile__icon" aria-hidden="true"><i data-lucide="file-text"></i></span>
           <span class="link-tile__label">Propostas</span>
         </a>
         <a class="link-tile reveal reveal--delay-2" href="#solucoes">
-          <span class="link-tile__icon link-tile__icon--play" aria-hidden="true"></span>
+          <span class="link-tile__icon" aria-hidden="true"><i data-lucide="circle-play"></i></span>
           <span class="link-tile__label">Demo</span>
         </a>
         <a class="link-tile reveal reveal--delay-3" href="#contato">
-          <span class="link-tile__icon link-tile__icon--chat" aria-hidden="true"></span>
+          <span class="link-tile__icon" aria-hidden="true"><i data-lucide="messages-square"></i></span>
           <span class="link-tile__label">Suporte</span>
         </a>
       </div>
@@ -238,6 +256,7 @@
     <p class="site-footer__legal reveal reveal--delay-2">© <span id="year"></span> Blufy. Todos os direitos reservados.</p>
   </footer>
 
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

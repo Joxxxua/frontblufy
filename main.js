@@ -1,5 +1,19 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+if (typeof lucide !== "undefined") {
+  lucide.createIcons({
+    attrs: {
+      "stroke-width": 1.5,
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round",
+    },
+  });
+}
+
+document.querySelector("[data-nav-search]")?.addEventListener("click", () => {
+  document.getElementById("solucoes")?.scrollIntoView({ behavior: "smooth" });
+});
+
 (function initScrollReveal() {
   const nodes = document.querySelectorAll(".reveal");
   if (!nodes.length) return;
